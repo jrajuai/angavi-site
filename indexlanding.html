@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angavi Intelligence · AI Visibility Audit</title>
+<meta name="description" content="We audit how ChatGPT, Claude, Gemini, Perplexity, Grok and the AI answers inside search describe and recommend your brand, then a senior analyst makes the fixes for you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#f7f3ec;color:#201b16;font-family:'Newsreader',Georgia,serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  a.lk{color:#2b5f5c}
+  a.lk:hover{color:#1c433f}
+  .sans{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+  .wrap{max-width:1180px;margin:0 auto}
+  .pg{padding-left:52px;padding-right:52px}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .band{display:grid;grid-template-columns:repeat(4,1fr)}
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr)}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr)}
+  .grid5{display:grid;grid-template-columns:repeat(5,1fr)}
+  .aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:48px}
+  .mrow{display:grid;grid-template-columns:96px 300px 1fr;gap:32px;align-items:baseline}
+  .btn{display:inline-block;background:#2b5f5c;color:#fff;font-weight:600;border-radius:2px;transition:background .15s}
+  .btn:hover{background:#1c433f}
+  h1{font-size:60px;line-height:1.04;font-weight:500;letter-spacing:-.02em}
+  h2{font-size:42px;font-weight:500;letter-spacing:-.02em}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#2b5f5c;font-weight:600}
+  @media(max-width:860px){
+    .hero{grid-template-columns:1fr;gap:36px}
+    .band{grid-template-columns:1fr 1fr}
+    .cols3{grid-template-columns:1fr;gap:26px}
+    .grid2{grid-template-columns:1fr}
+    .grid3{grid-template-columns:1fr}
+    .grid4{grid-template-columns:1fr 1fr}
+    .grid5{grid-template-columns:1fr 1fr}
+    .aboutgrid{grid-template-columns:1fr;gap:28px}
+    .mrow{grid-template-columns:1fr;gap:6px}
+    .pg{padding-left:22px;padding-right:22px}
+    h1{font-size:38px}
+    h2{font-size:31px}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- nav -->
+  <div class="pg" style="display:flex;align-items:center;justify-content:space-between;padding-top:26px;padding-bottom:26px">
+    <div style="font-size:24px;font-weight:600;letter-spacing:-.01em">Angavi Intelligence</div>
+    <div style="display:flex;align-items:center;gap:22px">
+      <div class="navlinks" style="display:flex;align-items:center;gap:32px;font-size:15.5px;color:#6a625a">
+      <a href="#shift" class="lk" style="color:#6a625a"><span data-i18n="n_shift">The shift</span></a>
+      <a href="#audit" class="lk" style="color:#6a625a"><span data-i18n="n_audit">The audit</span></a>
+      <a href="#fix" class="lk" style="color:#6a625a"><span data-i18n="n_fix">The fix</span></a>
+      <a href="#coverage" class="lk" style="color:#6a625a"><span data-i18n="nav_cov">Coverage</span></a>
+      <a href="#about" class="lk" style="color:#6a625a"><span data-i18n="n_about">About</span></a>
+      <a href="#request" class="sans" style="font-size:13.5px;font-weight:600;color:#2b5f5c;border-bottom:2px solid #2b5f5c;padding-bottom:3px"><span data-i18n="cta_demo">Request a demo</span></a>
+      </div>
+      <div class="sans" style="display:flex;align-items:center;gap:3px;font-size:13px;font-weight:600">
+        <span id="lang-en" onclick="setLang('en')" style="cursor:pointer;padding:4px 9px;border-radius:5px;color:#2b5f5c;background:#eef1e8">EN</span>
+        <span style="color:#c9c0b2">/</span>
+        <span id="lang-fr" onclick="setLang('fr')" style="cursor:pointer;padding:4px 9px;border-radius:5px;color:#a79b88">FR</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="pg hero" style="padding-top:70px;padding-bottom:60px;border-top:1px solid #ddd4c7">
+    <div>
+      <div class="sans eyebrow" style="margin-bottom:26px"><span data-i18n="h_eyebrow">AI Visibility Audit</span></div>
+      <h1><span data-i18n="h1">Your next customer is asking an AI, not Google.</span></h1>
+      <p style="font-size:19px;line-height:1.62;color:#4a433c;margin-top:26px;max-width:52ch"><span data-i18n="h_sub">Across every major assistant, we read what the models truly know about you, where they are guessing, and where a competitor is named instead. Then a senior team makes the fixes for you, and proves the change. Built for African brands the models barely know yet.</span></p>
+      <div class="sans" style="display:flex;align-items:center;gap:26px;margin-top:36px;flex-wrap:wrap">
+        <a href="#request" class="btn" style="font-size:15px;padding:15px 28px"><span data-i18n="cta_demo">Request a demo</span></a>
+        <a href="#audit" style="font-size:15px;font-weight:600;color:#201b16;border-bottom:1.5px solid #201b16;padding-bottom:3px"><span data-i18n="h_see">See a sample audit</span></a>
+      </div>
+    </div>
+    <div style="background:#fffdf9;border:1px solid #e4dccd;padding:34px;border-radius:3px;box-shadow:0 20px 50px -40px rgba(32,27,22,.5)">
+      <div class="sans" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a79b88;margin-bottom:14px"><span data-i18n="hc_eyebrow">A buyer asks AI about you</span></div>
+      <div style="font-size:23px;line-height:1.4;font-weight:500;letter-spacing:-.01em"><span data-i18n="hc_q">"Can I trust this company?"</span></div>
+      <div style="margin-top:24px;padding-top:20px;border-top:1px solid #e4dccd">
+        <div class="sans" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#a79b88;margin-bottom:12px"><span data-i18n="hc_reveal">What the answer reveals</span></div>
+        <div class="sans" style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 0"><span style="font-size:14.5px;font-weight:600"><span data-i18n="hc_r1">Does it really know you?</span></span><span style="font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:20px;color:#fff;background:#a8863c"><span data-i18n="hc_partly">Partly</span></span></div>
+        <div class="sans" style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 0;border-top:1px solid #f0ece2"><span style="font-size:14.5px;font-weight:600"><span data-i18n="hc_r2">Can it vouch for you?</span></span><span style="font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:20px;color:#fff;background:#b5533a"><span data-i18n="hc_no">No</span></span></div>
+        <div class="sans" style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 0;border-top:1px solid #f0ece2"><span style="font-size:14.5px;font-weight:600"><span data-i18n="hc_r3">Are you named first?</span></span><span style="font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:20px;color:#fff;background:#b5533a"><span data-i18n="hc_no">No</span></span></div>
+        <div class="sans" style="font-size:12px;color:#a79b88;margin-top:14px"><span data-i18n="hc_foot">Three of the five deeper reads we run.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- coverage band (qualitative) -->
+  <div class="pg band" style="border-top:1px solid #ddd4c7;border-bottom:1px solid #ddd4c7">
+    <div style="padding:26px 0;padding-right:20px"><div style="font-size:19px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="cb1t">Every major assistant</span></div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:6px"><span data-i18n="cb1d">The AI tools your buyers now ask first.</span></div></div>
+    <div style="padding:26px 0;padding-right:20px"><div style="font-size:19px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="cb2t">AI answers in search</span></div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:6px"><span data-i18n="cb2d">The answer boxes that sit above the links.</span></div></div>
+    <div style="padding:26px 0;padding-right:20px"><div style="font-size:19px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="cb3t">The questions that matter</span></div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:6px"><span data-i18n="cb3d">By category, by comparison and by name.</span></div></div>
+    <div style="padding:26px 0"><div style="font-size:19px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="cb4t">In your market's languages</span></div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:6px"><span data-i18n="cb4d">English, French, Arabic, Swahili and more.</span></div></div>
+  </div>
+
+  <!-- the shift -->
+  <div id="shift" class="pg" style="padding-top:64px;padding-bottom:64px;background:#f1ebe0">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="n_shift">The shift</span></div>
+    <h2 style="max-width:22ch"><span data-i18n="s_h2">Search is quietly moving into the answer itself.</span></h2>
+    <div class="cols3" style="margin-top:44px">
+      <div><div style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em"><span data-i18n="s1t">One answer</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="s1d">Most buyers read a single AI reply and act on it, instead of scanning a page of links.</span></p></div>
+      <div><div style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em"><span data-i18n="s2t">Named or found</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="s2d">Brands score well when named, yet rarely appear when a buyer describes the category.</span></p></div>
+      <div><div style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em"><span data-i18n="s3t">Wide coverage</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="s3d">Each assistant answers differently, so we read across every one, not a favoured few.</span></p></div>
+    </div>
+  </div>
+
+  <!-- why angavi -->
+  <div id="why" class="pg" style="padding-top:64px;padding-bottom:64px;background:#2b5f5c;color:#f7f3ec">
+    <div class="sans eyebrow" style="margin-bottom:20px;color:#bcd6d1"><span data-i18n="w_eyebrow">Why Angavi</span></div>
+    <h2 style="max-width:20ch;color:#f7f3ec"><span data-i18n="w_h2">More than the usual AI audit.</span></h2>
+    <p class="sans" style="font-size:15px;line-height:1.65;color:#d3e2df;margin-top:16px;max-width:56ch"><span data-i18n="w_sub">Most tools hand you a score and leave. Two things make our reading different.</span></p>
+    <div class="grid2" style="gap:20px;margin-top:40px">
+      <div style="background:rgba(247,243,236,.06);border:1px solid rgba(247,243,236,.18);border-radius:10px;padding:32px"><h3 style="font-size:25px;font-weight:600;letter-spacing:-.01em;color:#f7f3ec"><span data-i18n="w1t">We know the ground here</span></h3><p class="sans" style="font-size:14.5px;line-height:1.68;color:#d3e2df;margin-top:12px"><span data-i18n="w1d">We understand how buyers across Africa actually search: the languages they use, the local phrasing, and the established names you are measured against. Tools built for other markets miss all of it.</span></p></div>
+      <div style="background:rgba(247,243,236,.06);border:1px solid rgba(247,243,236,.18);border-radius:10px;padding:32px"><h3 style="font-size:25px;font-weight:600;letter-spacing:-.01em;color:#f7f3ec"><span data-i18n="w2t">We know how the models think</span></h3><p class="sans" style="font-size:14.5px;line-height:1.68;color:#d3e2df;margin-top:12px"><span data-i18n="w2d">Seventeen years inside Google, and years teaching these systems at the Swiss Cyber Institute. We read why an engine answers the way it does, so we fix the cause rather than the symptom.</span></p></div>
+    </div>
+  </div>
+
+  <!-- what you get -->
+  <div id="audit" class="pg" style="padding-top:64px;padding-bottom:64px">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="g_eyebrow">What you get</span></div>
+    <h2 style="max-width:20ch"><span data-i18n="g_h2">A clear picture, and the work done.</span></h2>
+    <div class="grid2" style="gap:1px;background:#e4dccd;margin-top:40px;border:1px solid #e4dccd">
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g1t">Multi-engine audit</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g1d">How every engine describes and recommends you, across the questions your buyers actually ask.</span></p></div>
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g2t">Evidence, word for word</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g2d">The exact answers each engine returned, so nothing rests on our word alone.</span></p></div>
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g3t">Senior reading</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g3d">What the results mean, read by a senior analyst, not a raw score for you to decode.</span></p></div>
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g4t">Site readiness check</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g4d">Where your own pages help the engines that read them, and where they hold you back.</span></p></div>
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g5t">A ranked plan</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g5d">Every fix ordered by how much it will move your visibility, highest value first.</span></p></div>
+      <div style="background:#f7f3ec;padding:32px"><h3 style="font-size:23px;font-weight:600;letter-spacing:-.01em"><span data-i18n="g6t">The fixes, done for you</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="g6d">We make the changes that move visibility, then run the audit again to prove they worked.</span></p></div>
+    </div>
+  </div>
+
+  <!-- the fix -->
+  <div id="fix" class="pg" style="padding-top:64px;padding-bottom:64px;background:#f1ebe0">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="f_eyebrow">Done for you</span></div>
+    <h2 style="max-width:24ch"><span data-i18n="f_h2">Most reports stop at the problem. We stay until it is fixed.</span></h2>
+    <p class="sans" style="font-size:15px;line-height:1.65;color:#5a524a;margin-top:16px;max-width:58ch"><span data-i18n="f_sub">A list of what is wrong is the easy half. The work that changes what AI says about you is the hard half, and it is the half we own.</span></p>
+    <div class="cols3" style="margin-top:40px;gap:28px">
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><div style="font-size:26px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="f1t">We make the fixes</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="f1d">The changes that move your visibility, made for you, not handed back as homework for your team.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><div style="font-size:26px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="f2t">We put them in place</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="f2d">The work goes onto your site and into the places the engines read, so nothing sits waiting on you.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><div style="font-size:26px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="f3t">We prove it moved</span></div><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:12px"><span data-i18n="f3d">We run the same questions again afterwards and show you the change in plain numbers.</span></p></div>
+    </div>
+  </div>
+
+  <!-- the deeper read -->
+  <div id="deeper" class="pg" style="padding-top:64px;padding-bottom:64px">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="d_eyebrow">Past the score</span></div>
+    <h2 style="max-width:22ch"><span data-i18n="d_h2">We read what the lightweight tools miss.</span></h2>
+    <p class="sans" style="font-size:15px;line-height:1.65;color:#5a524a;margin-top:16px;max-width:64ch"><span data-i18n="d_sub">The models learned the world from a web that is thin on African businesses. So a simple score misses what matters most here: whether AI really knows you or is guessing, and whose version of you it picked up. We read for five things a dashboard cannot.</span></p>
+    <div class="grid2" style="gap:16px;margin-top:40px">
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><h3 style="font-size:21px;font-weight:600;letter-spacing:-.01em"><span data-i18n="d1t">What it knows, and what it makes up</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="d1d">How much of what AI says about you stands on real, checkable facts, and how much it is quietly filling in.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><h3 style="font-size:21px;font-weight:600;letter-spacing:-.01em"><span data-i18n="d2t">Asked from here, or from abroad</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="d2d">The same question gets a different answer from a local buyer and from one overseas. We show you both, because the gap can cost you.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><h3 style="font-size:21px;font-weight:600;letter-spacing:-.01em"><span data-i18n="d3t">Can it vouch for you</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="d3d">When a buyer asks if you are reliable, safe or real, we check whether AI can find the proof to back you up, or whether it hedges.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px"><h3 style="font-size:21px;font-weight:600;letter-spacing:-.01em"><span data-i18n="d4t">Where it learns about you</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px"><span data-i18n="d4d">Which places the models lean on for your kind of business, and whether those places carry a clear, current picture of you.</span></p></div>
+      <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:28px;grid-column:1 / -1"><h3 style="font-size:21px;font-weight:600;letter-spacing:-.01em"><span data-i18n="d5t">Across your borders</span></h3><p class="sans" style="font-size:14px;line-height:1.65;color:#5a524a;margin-top:10px;max-width:80ch"><span data-i18n="d5d">Whether AI carries you into the neighbouring markets you want to grow into, or quietly drops you at the border.</span></p></div>
+    </div>
+  </div>
+
+  <!-- coverage -->
+  <div id="coverage" class="pg" style="padding-top:64px;padding-bottom:64px;background:#f1ebe0">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="nav_cov">Coverage</span></div>
+    <h2 style="max-width:22ch"><span data-i18n="c_h2">The surfaces your buyers actually use.</span></h2>
+    <p class="sans" style="font-size:15px;line-height:1.65;color:#5a524a;margin-top:16px;max-width:56ch"><span data-i18n="c_sub">One audit reads across every assistant and AI answer box your buyers reach for, because your visibility looks different in each.</span></p>
+
+    <div class="sans" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a79b88;margin-top:38px;margin-bottom:14px"><span data-i18n="c_assist">AI assistants</span></div>
+    <div class="grid5" style="gap:1px;background:#e4dccd;border:1px solid #e4dccd">
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">GP</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">ChatGPT</div><div class="sans" style="font-size:11.5px;color:#a79b88">OpenAI</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">CL</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">Claude</div><div class="sans" style="font-size:11.5px;color:#a79b88">Anthropic</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">GM</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">Gemini</div><div class="sans" style="font-size:11.5px;color:#a79b88">Google</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">PX</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">Perplexity</div><div class="sans" style="font-size:11.5px;color:#a79b88">Perplexity</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">GK</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">Grok</div><div class="sans" style="font-size:11.5px;color:#a79b88">xAI</div></div></div>
+    </div>
+
+    <div class="sans" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a79b88;margin-top:28px;margin-bottom:14px"><span data-i18n="cb2t">AI answers in search</span></div>
+    <div class="grid3" style="gap:1px;background:#e4dccd;border:1px solid #e4dccd">
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">AO</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">AI Overviews</div><div class="sans" style="font-size:11.5px;color:#a79b88">Google</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">CP</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">Bing Copilot</div><div class="sans" style="font-size:11.5px;color:#a79b88">Microsoft</div></div></div>
+      <div style="background:#f7f3ec;padding:22px;display:flex;align-items:center;gap:13px"><span class="sans" style="width:34px;height:34px;flex:0 0 34px;border-radius:8px;background:#2b5f5c;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center">DG</span><div><div style="font-size:16px;font-weight:600;letter-spacing:-.01em">DuckDuckGo</div><div class="sans" style="font-size:11.5px;color:#a79b88">Search Assist</div></div></div>
+    </div>
+  </div>
+
+  <!-- method -->
+  <div id="method" class="pg" style="padding-top:64px;padding-bottom:64px">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="m_eyebrow">How we work</span></div>
+    <h2 style="max-width:22ch"><span data-i18n="m_h2">From the first question to the fix.</span></h2>
+    <div style="margin-top:40px;border-top:1px solid #e4dccd">
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">01</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="m1t">We map the questions</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m1d">We build the set of prompts your buyers actually ask, by category, by comparison and by name, in the markets and languages that matter to you.</span></p></div>
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">02</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="m2t">We read every page you publish</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m2d">We build a fact sheet from your whole site, because companies say different things on different pages, and the engines notice.</span></p></div>
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">03</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="m3t">We query every surface</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m3d">Each prompt runs across every assistant and AI answer box we cover, and is captured word for word, so the findings can be reproduced rather than taken on trust.</span></p></div>
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">04</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="m4t">A senior analyst reads it</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m4d">We read where you surface, where a competitor is named instead, and why, turning raw answers into a clear diagnosis.</span></p></div>
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">05</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="f1t">We make the fixes</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m5d">You get a ranked plan, and we do the work that moves visibility rather than leaving you a list of tasks.</span></p></div>
+      <div class="mrow" style="padding:28px 0;border-bottom:1px solid #e4dccd"><span style="font-size:34px;font-weight:600;color:#2b5f5c;letter-spacing:-.02em">06</span><h3 style="font-size:24px;font-weight:600;letter-spacing:-.01em"><span data-i18n="m6t">We run the audit again</span></h3><p class="sans" style="font-size:14.5px;line-height:1.65;color:#5a524a;max-width:60ch"><span data-i18n="m6d">We repeat the questions a few weeks later, so you see the movement in plain numbers rather than a promise.</span></p></div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="about" class="pg" style="padding-top:64px;padding-bottom:64px;background:#f1ebe0">
+    <div class="sans eyebrow" style="margin-bottom:20px"><span data-i18n="a_eyebrow">About us</span></div>
+    <h2 style="max-width:26ch"><span data-i18n="a_h2">A team that knows the African tech economy, and the models, from the inside.</span></h2>
+    <p class="serif" style="font-size:21px;line-height:1.45;color:#2b5f5c;font-weight:500;margin-top:16px;max-width:40ch"><span data-i18n="a_mission">We are building the clearest picture of how AI sees African business.</span></p>
+    <div class="aboutgrid" style="margin-top:36px">
+      <div>
+        <p style="font-size:18px;line-height:1.62;color:#4a433c;max-width:60ch"><span data-i18n="a_p1">We are a team of technologists who understand the African tech economy from the inside: where its data is rich, where it is thin, and where AI quietly gets it wrong. That understanding is the whole point, because the gaps here are not the gaps the global tools were built for.</span></p>
+        <p style="font-size:18px;line-height:1.62;color:#4a433c;max-width:60ch;margin-top:20px"><span data-i18n="a_p2">Our background runs deep in these systems: years inside Google, and years spent teaching machine learning and AI. We do not resell someone else's tool. We built our own to question the models and grade what they say, and a senior analyst reads every result.</span></p>
+        <p style="font-size:18px;line-height:1.62;color:#4a433c;max-width:60ch;margin-top:20px"><span data-i18n="a_p3">We work from Zürich and Nairobi, and our focus is Africa, so the reading is grounded in how your buyers really search here, not borrowed from another market.</span></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:20px 22px"><div style="font-size:28px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em">Ex-Google</div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:4px"><span data-i18n="a_t1s">experience on the team</span></div></div>
+        <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:20px 22px"><div style="font-size:28px;font-weight:600;color:#2b5f5c;letter-spacing:-.01em"><span data-i18n="a_t2b">We teach</span></div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:4px"><span data-i18n="a_t2s">machine learning and AI</span></div></div>
+        <div style="background:#fffdf9;border:1px solid #e4dccd;border-radius:8px;padding:20px 22px"><div style="font-size:21px;line-height:1.2;font-weight:600;color:#2b5f5c;letter-spacing:-.01em">Zürich · Nairobi</div><div class="sans" style="font-size:13px;color:#6a625a;margin-top:4px"><span data-i18n="a_t3s">where the team is based</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div id="request" class="pg" style="background:#201b16;color:#f7f3ec;padding-top:78px;padding-bottom:78px;text-align:center">
+    <h2 style="max-width:18ch;margin:0 auto;color:#f7f3ec"><span data-i18n="cta_h2">Find out what AI is saying about you.</span></h2>
+    <p class="sans" style="font-size:16px;color:#b8afa2;margin-top:18px;max-width:48ch;margin-left:auto;margin-right:auto"><span data-i18n="cta_sub">See a sample audit, then exactly where your own brand stands across the engines your buyers now ask first.</span></p>
+    <a href="mailto:kuya@angavi.ai?subject=Request%20a%20demo" class="btn sans" style="font-size:15px;padding:16px 34px;margin-top:32px"><span data-i18n="cta_demo">Request a demo</span></a>
+    <div class="sans" style="margin-top:38px;font-size:13px;color:#8a8175">Angavi Intelligence · Zürich · Nairobi · kuya@angavi.ai</div>
+  </div>
+
+</div>
+
+<script>
+const I18N = {"en": {"n_shift": "The shift", "n_audit": "The audit", "n_fix": "The fix", "nav_cov": "Coverage", "n_about": "About", "cta_demo": "Request a demo", "h_eyebrow": "AI Visibility Audit", "h1": "Your next customer is asking an AI, not Google.", "h_sub": "Across every major assistant, we read what the models truly know about you, where they are guessing, and where a competitor is named instead. Then a senior team makes the fixes for you, and proves the change. Built for African brands the models barely know yet.", "h_see": "See a sample audit", "hc_eyebrow": "A buyer asks AI about you", "hc_q": "\"Can I trust this company?\"", "hc_reveal": "What the answer reveals", "hc_r1": "Does it really know you?", "hc_partly": "Partly", "hc_r2": "Can it vouch for you?", "hc_no": "No", "hc_r3": "Are you named first?", "hc_foot": "Three of the five deeper reads we run.", "cb1t": "Every major assistant", "cb1d": "The AI tools your buyers now ask first.", "cb2t": "AI answers in search", "cb2d": "The answer boxes that sit above the links.", "cb3t": "The questions that matter", "cb3d": "By category, by comparison and by name.", "cb4t": "In your market's languages", "cb4d": "English, French, Arabic, Swahili and more.", "s_h2": "Search is quietly moving into the answer itself.", "s1t": "One answer", "s1d": "Most buyers read a single AI reply and act on it, instead of scanning a page of links.", "s2t": "Named or found", "s2d": "Brands score well when named, yet rarely appear when a buyer describes the category.", "s3t": "Wide coverage", "s3d": "Each assistant answers differently, so we read across every one, not a favoured few.", "w_eyebrow": "Why Angavi", "w_h2": "More than the usual AI audit.", "w_sub": "Most tools hand you a score and leave. Two things make our reading different.", "w1t": "We know the ground here", "w1d": "We understand how buyers across Africa actually search: the languages they use, the local phrasing, and the established names you are measured against. Tools built for other markets miss all of it.", "w2t": "We know how the models think", "w2d": "Seventeen years inside Google, and years teaching these systems at the Swiss Cyber Institute. We read why an engine answers the way it does, so we fix the cause rather than the symptom.", "g_eyebrow": "What you get", "g_h2": "A clear picture, and the work done.", "g1t": "Multi-engine audit", "g1d": "How every engine describes and recommends you, across the questions your buyers actually ask.", "g2t": "Evidence, word for word", "g2d": "The exact answers each engine returned, so nothing rests on our word alone.", "g3t": "Senior reading", "g3d": "What the results mean, read by a senior analyst, not a raw score for you to decode.", "g4t": "Site readiness check", "g4d": "Where your own pages help the engines that read them, and where they hold you back.", "g5t": "A ranked plan", "g5d": "Every fix ordered by how much it will move your visibility, highest value first.", "g6t": "The fixes, done for you", "g6d": "We make the changes that move visibility, then run the audit again to prove they worked.", "f_eyebrow": "Done for you", "f_h2": "Most reports stop at the problem. We stay until it is fixed.", "f_sub": "A list of what is wrong is the easy half. The work that changes what AI says about you is the hard half, and it is the half we own.", "f1t": "We make the fixes", "f1d": "The changes that move your visibility, made for you, not handed back as homework for your team.", "f2t": "We put them in place", "f2d": "The work goes onto your site and into the places the engines read, so nothing sits waiting on you.", "f3t": "We prove it moved", "f3d": "We run the same questions again afterwards and show you the change in plain numbers.", "d_eyebrow": "Past the score", "d_h2": "We read what the lightweight tools miss.", "d_sub": "The models learned the world from a web that is thin on African businesses. So a simple score misses what matters most here: whether AI really knows you or is guessing, and whose version of you it picked up. We read for five things a dashboard cannot.", "d1t": "What it knows, and what it makes up", "d1d": "How much of what AI says about you stands on real, checkable facts, and how much it is quietly filling in.", "d2t": "Asked from here, or from abroad", "d2d": "The same question gets a different answer from a local buyer and from one overseas. We show you both, because the gap can cost you.", "d3t": "Can it vouch for you", "d3d": "When a buyer asks if you are reliable, safe or real, we check whether AI can find the proof to back you up, or whether it hedges.", "d4t": "Where it learns about you", "d4d": "Which places the models lean on for your kind of business, and whether those places carry a clear, current picture of you.", "d5t": "Across your borders", "d5d": "Whether AI carries you into the neighbouring markets you want to grow into, or quietly drops you at the border.", "c_h2": "The surfaces your buyers actually use.", "c_sub": "One audit reads across every assistant and AI answer box your buyers reach for, because your visibility looks different in each.", "c_assist": "AI assistants", "m_eyebrow": "How we work", "m_h2": "From the first question to the fix.", "m1t": "We map the questions", "m1d": "We build the set of prompts your buyers actually ask, by category, by comparison and by name, in the markets and languages that matter to you.", "m2t": "We read every page you publish", "m2d": "We build a fact sheet from your whole site, because companies say different things on different pages, and the engines notice.", "m3t": "We query every surface", "m3d": "Each prompt runs across every assistant and AI answer box we cover, and is captured word for word, so the findings can be reproduced rather than taken on trust.", "m4t": "A senior analyst reads it", "m4d": "We read where you surface, where a competitor is named instead, and why, turning raw answers into a clear diagnosis.", "m5d": "You get a ranked plan, and we do the work that moves visibility rather than leaving you a list of tasks.", "m6t": "We run the audit again", "m6d": "We repeat the questions a few weeks later, so you see the movement in plain numbers rather than a promise.", "a_eyebrow": "About us", "a_h2": "A team that knows the African tech economy, and the models, from the inside.", "a_mission": "We are building the clearest picture of how AI sees African business.", "a_p1": "We are a team of technologists who understand the African tech economy from the inside: where its data is rich, where it is thin, and where AI quietly gets it wrong. That understanding is the whole point, because the gaps here are not the gaps the global tools were built for.", "a_p2": "Our background runs deep in these systems: years inside Google, and years spent teaching machine learning and AI. We do not resell someone else's tool. We built our own to question the models and grade what they say, and a senior analyst reads every result.", "a_p3": "Our focus is Africa, so the reading is grounded in how your buyers really search here, not borrowed from another market.", "a_t1s": "experience on the team", "a_t2b": "We teach", "a_t2s": "machine learning and AI", "a_t3s": "where the team is based", "cta_h2": "Find out what AI is saying about you.", "cta_sub": "See a sample audit, then exactly where your own brand stands across the engines your buyers now ask first."}, "fr": {"n_shift": "Le basculement", "n_audit": "L'audit", "n_fix": "La correction", "nav_cov": "Couverture", "n_about": "À propos", "cta_demo": "Demander une démo", "h_eyebrow": "Audit de visibilité IA", "h1": "Votre prochain client interroge une IA, pas Google.", "h_sub": "Sur chaque grand assistant, nous lisons ce que les modèles savent vraiment de vous, là où ils devinent, et là où un concurrent est cité à votre place. Ensuite, une équipe expérimentée réalise les corrections pour vous, et prouve le changement. Conçu pour les marques africaines que les modèles connaissent encore mal.", "h_see": "Voir un exemple d'audit", "hc_eyebrow": "Un acheteur interroge l'IA à votre sujet", "hc_q": "« Puis-je faire confiance à cette entreprise ? »", "hc_reveal": "Ce que la réponse révèle", "hc_r1": "Vous connaît-elle vraiment ?", "hc_partly": "En partie", "hc_r2": "Peut-elle se porter garante de vous ?", "hc_no": "Non", "hc_r3": "Êtes-vous cité en premier ?", "hc_foot": "Trois des cinq lectures approfondies que nous menons.", "cb1t": "Chaque grand assistant", "cb1d": "Les outils d'IA que vos acheteurs consultent en premier.", "cb2t": "Réponses IA dans la recherche", "cb2d": "Les encadrés de réponse placés au-dessus des liens.", "cb3t": "Les questions qui comptent", "cb3d": "Par catégorie, par comparaison et par nom.", "cb4t": "Dans les langues de votre marché", "cb4d": "Anglais, français, arabe, swahili et plus encore.", "s_h2": "La recherche glisse discrètement vers la réponse elle-même.", "s1t": "Une seule réponse", "s1d": "La plupart des acheteurs lisent une seule réponse de l'IA et agissent en conséquence, au lieu de parcourir une page de liens.", "s2t": "Cité ou trouvé", "s2d": "Les marques s'en sortent bien lorsqu'on les nomme, mais apparaissent rarement quand l'acheteur décrit la catégorie.", "s3t": "Large couverture", "s3d": "Chaque assistant répond différemment ; nous les lisons donc tous, sans en favoriser quelques-uns.", "w_eyebrow": "Pourquoi Angavi", "w_h2": "Plus qu'un audit IA ordinaire.", "w_sub": "La plupart des outils vous donnent un score et s'arrêtent là. Deux choses rendent notre lecture différente.", "w1t": "Nous connaissons le terrain", "w1d": "Nous comprenons comment les acheteurs cherchent réellement en Afrique : les langues qu'ils emploient, les formulations locales, et les noms établis auxquels on vous compare. Les outils conçus pour d'autres marchés passent à côté de tout cela.", "w2t": "Nous savons comment les modèles raisonnent", "w2d": "Dix-sept ans au sein de Google, et des années à enseigner ces systèmes au Swiss Cyber Institute. Nous comprenons pourquoi un moteur répond comme il le fait, afin de corriger la cause plutôt que le symptôme.", "g_eyebrow": "Ce que vous recevez", "g_h2": "Une vision claire, et le travail réalisé.", "g1t": "Audit multi-moteurs", "g1d": "Comment chaque moteur vous décrit et vous recommande, sur les questions que vos acheteurs posent réellement.", "g2t": "Des preuves, mot pour mot", "g2d": "Les réponses exactes de chaque moteur, pour que rien ne repose sur notre seule parole.", "g3t": "Une lecture experte", "g3d": "Ce que signifient les résultats, interprétés par un analyste expérimenté, et non un score brut à déchiffrer.", "g4t": "Contrôle de l'état de votre site", "g4d": "Là où vos propres pages aident les moteurs qui les lisent, et là où elles vous freinent.", "g5t": "Un plan hiérarchisé", "g5d": "Chaque correction classée selon son impact sur votre visibilité, la plus utile en premier.", "g6t": "Les corrections, réalisées pour vous", "g6d": "Nous réalisons les changements qui font bouger la visibilité, puis relançons l'audit pour prouver qu'ils ont fonctionné.", "f_eyebrow": "Réalisé pour vous", "f_h2": "La plupart des rapports s'arrêtent au problème. Nous restons jusqu'à ce qu'il soit corrigé.", "f_sub": "Dresser la liste de ce qui ne va pas est la partie facile. Le travail qui change ce que l'IA dit de vous est la partie difficile, et c'est celle dont nous nous chargeons.", "f1t": "Nous réalisons les corrections", "f1d": "Les changements qui font bouger votre visibilité, réalisés pour vous, et non renvoyés comme devoirs à votre équipe.", "f2t": "Nous les mettons en place", "f2d": "Le travail est intégré à votre site et aux endroits que lisent les moteurs, pour que rien n'attende après vous.", "f3t": "Nous prouvons le progrès", "f3d": "Nous reposons ensuite les mêmes questions et vous montrons le changement en chiffres clairs.", "d_eyebrow": "Au-delà du score", "d_h2": "Nous lisons ce que les outils superficiels manquent.", "d_sub": "Les modèles ont appris le monde à partir d'un web pauvre en entreprises africaines. Un simple score passe donc à côté de l'essentiel ici : l'IA vous connaît-elle vraiment ou devine-t-elle, et quelle version de vous a-t-elle retenue. Nous examinons cinq choses qu'un tableau de bord ne peut pas voir.", "d1t": "Ce qu'elle sait, et ce qu'elle invente", "d1d": "Quelle part de ce que l'IA dit de vous repose sur des faits réels et vérifiables, et quelle part elle comble discrètement.", "d2t": "Interrogée d'ici, ou de l'étranger", "d2d": "La même question reçoit une réponse différente selon qu'elle vient d'un acheteur local ou de l'étranger. Nous vous montrons les deux, car l'écart peut vous coûter cher.", "d3t": "Peut-elle se porter garante de vous", "d3d": "Quand un acheteur demande si vous êtes fiable, sûr ou réel, nous vérifions si l'IA trouve les preuves pour vous soutenir, ou si elle reste évasive.", "d4t": "Où elle apprend qui vous êtes", "d4d": "Sur quelles sources les modèles s'appuient pour votre type d'activité, et si ces sources donnent de vous une image claire et actuelle.", "d5t": "Au-delà de vos frontières", "d5d": "Si l'IA vous porte jusqu'aux marchés voisins que vous visez, ou vous abandonne discrètement à la frontière.", "c_h2": "Les surfaces que vos acheteurs utilisent réellement.", "c_sub": "Un seul audit parcourt chaque assistant et chaque encadré de réponse IA que vos acheteurs sollicitent, car votre visibilité diffère dans chacun.", "c_assist": "Assistants IA", "m_eyebrow": "Comment nous travaillons", "m_h2": "De la première question à la correction.", "m1t": "Nous cartographions les questions", "m1d": "Nous constituons l'ensemble des questions que vos acheteurs posent réellement, par catégorie, par comparaison et par nom, dans les marchés et les langues qui comptent pour vous.", "m2t": "Nous lisons chaque page que vous publiez", "m2d": "Nous constituons une fiche de faits à partir de tout votre site, car les entreprises disent des choses différentes selon les pages, et les moteurs le remarquent.", "m3t": "Nous interrogeons chaque surface", "m3d": "Chaque question est posée à chaque assistant et encadré de réponse IA que nous couvrons, et capturée mot pour mot, afin que les constats puissent être reproduits plutôt que crus sur parole.", "m4t": "Un analyste expérimenté l'examine", "m4d": "Nous repérons où vous apparaissez, où un concurrent est cité à votre place, et pourquoi, transformant des réponses brutes en un diagnostic clair.", "m5d": "Vous obtenez un plan hiérarchisé, et nous faisons le travail qui fait bouger la visibilité au lieu de vous laisser une liste de tâches.", "m6t": "Nous relançons l'audit", "m6d": "Nous reposons les questions quelques semaines plus tard, pour que vous voyiez le progrès en chiffres clairs plutôt qu'en promesse.", "a_eyebrow": "À propos de nous", "a_h2": "Une équipe qui connaît l'économie tech africaine, et les modèles, de l'intérieur.", "a_mission": "Nous construisons l'image la plus claire de la façon dont l'IA perçoit les entreprises africaines.", "a_p1": "Nous sommes une équipe de technologues qui comprend l'économie tech africaine de l'intérieur : là où ses données sont riches, là où elles sont pauvres, et là où l'IA se trompe sans le dire. Cette compréhension est essentielle, car les lacunes ici ne sont pas celles pour lesquelles les outils mondiaux ont été conçus.", "a_p2": "Notre expérience de ces systèmes est profonde : des années au sein de Google, et des années à enseigner l'apprentissage automatique et l'IA. Nous ne revendons pas l'outil d'un autre. Nous avons construit le nôtre pour interroger les modèles et évaluer leurs réponses, et un analyste expérimenté examine chaque résultat.", "a_p3": "Nous travaillons depuis Zürich et Nairobi, et notre priorité est l'Afrique ; la lecture est donc ancrée dans la façon dont vos acheteurs cherchent réellement ici, et non empruntée à un autre marché.", "a_t1s": "d'expérience dans l'équipe", "a_t2b": "Nous enseignons", "a_t2s": "l'apprentissage automatique et l'IA", "a_t3s": "où l'équipe est basée", "cta_h2": "Découvrez ce que l'IA dit de vous.", "cta_sub": "Voyez un exemple d'audit, puis exactement où se situe votre marque sur les moteurs que vos acheteurs consultent désormais en premier."}};
+function setLang(l){
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var k = el.getAttribute('data-i18n');
+    if (I18N[l] && I18N[l][k] != null) el.textContent = I18N[l][k];
+  });
+  document.documentElement.lang = (l==='fr') ? 'fr' : 'en-GB';
+  var en=document.getElementById('lang-en'), fr=document.getElementById('lang-fr');
+  var on='#eef1e8', onc='#2b5f5c', offc='#a79b88';
+  if(l==='fr'){fr.style.background=on;fr.style.color=onc;en.style.background='transparent';en.style.color=offc;}
+  else{en.style.background=on;en.style.color=onc;fr.style.background='transparent';fr.style.color=offc;}
+}
+</script>
+</body>
+</html>
